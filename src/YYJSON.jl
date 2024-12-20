@@ -604,7 +604,7 @@ function yyjson_obj_iter_get_val(key)
     return ccall((:yyjson_obj_iter_get_val, libyyjson), Ptr{YYJSONVal}, (Ptr{YYJSONVal},), key)
 end
 
-#__Allocator
+#__ Allocator
 
 function yyjson_alc_dyn_new()
     return ccall((:yyjson_alc_dyn_new, libyyjson), Ptr{YYJSONAlc}, ())
