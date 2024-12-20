@@ -621,8 +621,11 @@ end
 include("Reader.jl")
 using .Reader
 
-include("Parser.jl")
-using .Parser
+include("ParserJSON.jl")
+using .ParserJSON
+
+include("LazyJSON.jl")
+using .LazyJSON
 
 include("LazyParser.jl")
 using .LazyParser
